@@ -6,7 +6,7 @@
 ║                                                                            ║
 ║  Developed by: Nicky Hadfat Sugianto (JustNickyH)                         ║
 ║  Framework   : CrewAI + LangChain Google GenAI                            ║
-║  Model       : Gemini 1.5 Flash                                           ║
+║  Model       : Gemini 2.5 Flash                                           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 A production-ready multi-agent threat intelligence pipeline that extracts,
