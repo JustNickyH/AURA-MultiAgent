@@ -45,7 +45,7 @@ BANNER = r"""
     ║                                                                       ║
     ║    [38;5;245m◈  Version   :  1.0.0-production[38;5;51m                                   ║
     ║    [38;5;245m◈  Framework :  CrewAI + LangChain Google GenAI[38;5;51m                     ║
-    ║    [38;5;245m◈  Model     :  Gemini 1.5 Flash[38;5;51m                                   ║
+    ║    [38;5;245m◈  Model     :  Gemini 2.5 Flash[38;5;51m                                   ║
     ║    [38;5;245m◈  Architect :  Nicky Hadfat Sugianto (JustNickyH)[38;5;51m                 ║
     ║                                                                       ║
     ╚═══════════════════════════════════════════════════════════════════════╝
@@ -182,7 +182,7 @@ def build_crew(threat_scenario: str, api_key: str):
     # ── LLM instances ────────────────────────────────────────────────────
     # Lower temperature for the researcher → precise, factual extraction.
     llm_researcher = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         google_api_key=api_key,
         temperature=0.4,
         convert_system_message_to_human=True,
@@ -190,7 +190,7 @@ def build_crew(threat_scenario: str, api_key: str):
 
     # Slightly higher temperature for the reporter → natural executive prose.
     llm_reporter = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         google_api_key=api_key,
         temperature=0.7,
         convert_system_message_to_human=True,
